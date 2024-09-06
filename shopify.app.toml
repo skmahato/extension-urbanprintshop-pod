@@ -1,0 +1,31 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d7dcc0990a0a8483ea58c4f320cc5767"
+name = "Urban Printshop POD"
+handle = "urban-printshop-pod"
+application_url = "https://riverr-enterprise-integrations-dot-riverr-enterprise-user.uc.r.appspot.com/app/auth/CGQJCFLSoac4NZ1RslOX"
+embedded = false
+
+[build]
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [ "https://app.urbanprintshopco.com/app-user" ]
+
+[webhooks]
+api_version = "2024-07"
+
+  [[webhooks.subscriptions]]
+  uri = "https://riverr-enterprise-integrations-dot-riverr-enterprise-user.uc.r.appspot.com/app/CGQJCFLSoac4NZ1RslOX/cde"
+  compliance_topics = [ "customers/redact" ]
+
+  [[webhooks.subscriptions]]
+  uri = "https://riverr-enterprise-integrations-dot-riverr-enterprise-user.uc.r.appspot.com/app/CGQJCFLSoac4NZ1RslOX/cdr"
+  compliance_topics = [ "customers/data_request" ]
+
+  [[webhooks.subscriptions]]
+  uri = "https://riverr-enterprise-integrations-dot-riverr-enterprise-user.uc.r.appspot.com/app/CGQJCFLSoac4NZ1RslOX/sde"
+  compliance_topics = [ "shop/redact" ]
+
+[pos]
+embedded = false

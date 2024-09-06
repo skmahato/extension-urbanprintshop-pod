@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "scripts": {
+        "shopify": "shopify",
+        "build": "shopify app build",
+        "push": "shopify app push",
+        "scaffold": "shopify app scaffold",
+        "deploy": "shopify app deploy",
+        "info": "shopify app info",
+        "dev": "shopify app dev",
+        "bootstrap": "scaffold extension"
+        
+    },
+   
+    "dependencies": {
+        "@shopify/app": "3.2.0",
+        "@shopify/cli": "^3.2.0"
+    }
+}

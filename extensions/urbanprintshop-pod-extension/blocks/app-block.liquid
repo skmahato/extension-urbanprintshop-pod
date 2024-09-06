@@ -1,0 +1,28 @@
+<div class="river-customization-btn">
+    <button id="riverr-btn" class="">Customize</button>
+</div>
+ <script>
+   window.riverrProductID = "{{product.id}}";
+  
+ </script>
+ 
+ {% schema %}
+   {
+     "name": "Riverr Customize Button",
+     "target": "section",
+     "stylesheet": "style.css",
+     "javascript": "script.js",
+     "templates": ["product"],
+     "settings": []
+   }
+ {% endschema %}
+<!-- 
+ {%- if block.settings.heading -%}
+ <h2>{{ block.settings.heading }}</h2>
+    {
+         "type": "text",
+         "id": "heading",
+         "label": "Want To Add Customization Button For this Product (Type Yes/No)",
+         "default": "Yes"
+       }
+{%- endif -%} -->
